@@ -19,16 +19,13 @@ import javax.validation.constraints.NotNull;
 @ToString
 @EqualsAndHashCode
 @JacksonXmlRootElement(localName = "Result")
-public class PriceResultDTO {
+public class PriceDatatDTO {
     @NotNull
     private String productCode;
-    @NotNull
     @Min(value = 0)
     private Double price;
-    @NotNull
     @Min(value = 0)
     private Integer unitCount;
-    @NotNull
     @Min(value = 0)
     private Integer cartonCount;
 }
