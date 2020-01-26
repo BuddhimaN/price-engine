@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.retailsuper</groupId>
 	<artifactId>priceengine</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>priceengine</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Price engine solution for a store which calculates price based on selling items by single units and cartons.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
