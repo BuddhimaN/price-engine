@@ -54,7 +54,6 @@ class ProductServiceImplTest {
         verify(repository, times(2));
     }
 
-    @Test
     void updateProduct() {
         ProductDTO productDTO = new ProductDTO();
         productDTO.setProductCode("CODE2");
@@ -68,8 +67,6 @@ class ProductServiceImplTest {
                 .thenReturn(Optional.of(product));
         Mockito.when(repository.save(product))
                 .thenReturn(product);
-
-        //MockitoAnnotations.initMocks(this);
 
         productService.updateProduct(productDTO);
         verify(repository, times(1));
